@@ -11,7 +11,7 @@ exports.up = function(knex) {
 exports.down = function(knex) { 
   return Promise.all([
     knex.schema.table('papers', function(table) {
-      table.dropCollumn('publisher');
+      table.dropColumn('publisher');
     })
   ]);
   
